@@ -1,0 +1,146 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+#banner{
+    display: grid;
+    width: 97%;
+    grid-template-columns: 15% 20% 30% ;
+    align-items: center;
+    background-color: gray;
+    padding-left: 3%;
+}
+
+h1{
+    grid-column: 3 /span 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#CAP_Logo_Img{
+    justify-self: right;
+}
+
+#input_capmarkt_daten{
+    display: flex;
+    width: 80%;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.listenwrapper_gerade{
+    display: grid;
+    padding-left: 10px;
+    height: 40px;
+    grid-template-columns: 46% 46% 7%;
+    border-top: 0px;
+    border-bottom: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-style: dotted;
+    align-items: center;
+    justify-content: left;
+}
+
+#mitarbeiter_liste_daten{
+    width: 70%;
+    border-style: solid;
+    border: 1ptx;
+    padding: 0;
+    margin: 30px;
+}
+
+#mitarbeiter_liste_daten_header{
+    display: grid;
+    grid-template-columns: 46% 46% 7%;
+    background-color: darkgray;
+    border-style: dotted;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px;
+    border-color: lightgray;
+    padding-left: 10px;
+}
+
+.listenwrapper_ungerade{
+    display: grid;
+    height: 40px;
+    padding-left: 10px;
+    background-color: lightgrey;
+    grid-template-columns: 46% 46% 7%;
+    border-top: 0px;
+    border-bottom: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-style: dotted;
+    align-items: center;
+    justify-content: left;
+}
+.listenelement_nachname{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left: 1px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.delete_eintrag{
+    width: 70px;
+    height: 25px;
+}
+input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 270px;
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15;
+}
+
+#Footer{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 50% 50%;
+    align-content: space-around;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    background-color: gray;
+}
+
+.footerItem{
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+a:visited{
+    color: rgb(59, 49, 49);
+}
+
+a:hover{
+    color:black;
+}
+
+a:active{
+    color: lightgray;
+}
+
+
+#input_mitarbeiter_daten{
+    display: flex;
+    width: 80%;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+#confirm_send_data{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    height: 30px;
+}

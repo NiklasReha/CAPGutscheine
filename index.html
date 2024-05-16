@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CAP-Gutscheinaktion</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="banner">
+            <img src="resources/cap-removebg-preview.png" height="70px" id=" CAP_Logo_Img">
+            <h1>Gutscheinaktion CAP</h1>
+        </div>
+        <div id="input_capmarkt_daten">
+            <input type="text" id="input_capmarkt_name" class="grid_item" placeholder="Name CAP-Markt"/>
+            <input type="text" id="input_strasse_hausnummer" class="grid_item" placeholder="Postleitzahl CAP-Markt"/>
+        </div>
+        <div id="input_mitarbeiter_daten">
+            <input type="text" id="input_vorname_mitarbeiter" placeholder="Vorname Mitarbeiter"/>
+            <input type="text" id="input_nachname_mitarbeiter" placeholder="Nachname Mitarbeiter"/>
+            <button id="confirm_input_mitarbeiter" type="button" onclick="enterWorker()">Bestätigen</button>
+        </div>
+        <div id="zeige_daten">
+            <ol id="mitarbeiter_liste_daten">
+                <li id="mitarbeiter_liste_daten_header">
+                    <p>Vorname</p>
+                    <p>Nachname</p>
+                    <p>Löschen</p>
+                </li>       
+            </ol>
+        </div>
+        <div id="sende_daten">
+            <button id="confirm_send_data" onclick="sende_daten()">Sende Daten</button>
+        </div>
+        <div id="Footer">
+            <div class="footerItem">
+                <a href="https://rehagmbh.de/datenschutzerklaerung">Datenschutzerklärung</a>
+            </div>
+            <div class="footerItem">
+                <a href="https://rehagmbh.de/impressum">Impressum</a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
