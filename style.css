@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     width: 100%;
+    overflow-y: auto;
 }
 #banner{
     display: grid;
@@ -28,6 +29,28 @@ h1{
     padding-left: 30px;
 }
 
+#zeige_daten{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    width: 70%;
+    max-height: 60vh;
+    justify-content: center;
+    padding: 0;
+}
+
+#mitarbeiter_liste_daten{
+    overflow-y: auto;
+    overflow-x: none;
+    margin:0;
+    border-style: solid;
+    border: 1ptx;
+    padding: 0;
+}
+
 .listenwrapper_gerade{
     display: grid;
     padding-left: 10px;
@@ -42,13 +65,7 @@ h1{
     justify-content: left;
 }
 
-#mitarbeiter_liste_daten{
-    width: 70%;
-    border-style: solid;
-    border: 1ptx;
-    padding: 0;
-    margin: 30px;
-}
+
 
 #mitarbeiter_liste_daten_header{
     display: grid;
@@ -101,7 +118,8 @@ input{
     width: 100vw;
     grid-template-columns: 50% 50%;
     align-content: space-around;
-    position:fixed;
+    margin-top: 30px;
+    position: fixed;
     left: 0;
     bottom: 0;
     height: 70px;
@@ -142,5 +160,6 @@ a:active{
 #confirm_send_data{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 30px;
+    margin-bottom: 100px;
     height: 30px;
 }
